@@ -73,19 +73,20 @@ export default function Home() {
             </div>
           ))}
 
-          {/* Cuadros del futuro */}
-          <div className="relative flex flex-col items-center mt-20 space-y-10">
-            {futureEvents.map((future, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div
-                  className="w-20 h-20 bg-pink-200 border-4 border-pink-500 flex justify-center items-center text-4xl text-pink-500 font-bold rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-110"
-                  onClick={() => setShowFuture(future)}
-                >
-                  +
-                </div>
-              </div>
-            ))}
-          </div>
+{/* Cuadros del futuro */}
+<div className="relative flex flex-col items-center mt-28  space-y-40">
+  {futureEvents.map((future, index) => (
+    <div key={index} className="flex flex-col items-center">
+      <div
+        className="w-20 h-20 bg-pink-200 border-4 border-pink-500 flex justify-center items-center text-4xl text-pink-500 font-bold rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-110"
+        onClick={() => setShowFuture(future)}
+      >
+        +
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
 
@@ -118,6 +119,7 @@ export default function Home() {
           </div>
         </div>
       )}
+
 
       {/* Animaciones */}
       <style jsx>{`
